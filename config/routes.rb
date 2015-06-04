@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   devise_for :users
   get 'auth/:provider/callback', to: 'social#create'
   resources :users
+  
+  resources :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

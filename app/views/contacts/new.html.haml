@@ -1,0 +1,19 @@
+%div.main.row
+  %div.col-md-4.company_ad
+    %h2 find Address:
+    %address
+      %p 500 Lorem Ipsum Dolor Sit,
+      %p 22-56-2-9 Sit Amet, Lorem,
+      %p USA
+      %p Phone:(00) 222 666 444
+      %p Fax: (000) 000 00 00 0
+      %p Email: 
+        = link_to "info(at)mycompany.com","mailto:info@mycompany.com"
+      %p Follow on: 
+        = link_to "Facebook", "#",
+        = link_to "Twitter", "#"
+  %div.col-md-8
+    %div.contact-form
+      %h2 Contact Us
+      = render :partial => "new_form"
+  %div.clearfix
